@@ -1,22 +1,14 @@
-.App {
-  text-align: center;
+body {
+    background-color: #F25634;
 }
 
-.App-logo {
-  height: 40vmin;
+.slick-slide {
+    height: 220px;
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.slick-slide img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }

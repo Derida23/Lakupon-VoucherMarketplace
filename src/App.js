@@ -3,7 +3,7 @@ import {Container, Row, Col, Card} from 'react-bootstrap';
 import { Input } from "semantic-ui-react";
 import View from "react-flexbox";
 import { Icon } from "react-icons-kit";
-import { user, bell } from "react-icons-kit/feather";
+import { user, bell, packageIcon, dollarSign } from "react-icons-kit/feather";
 import {
   u1F372,
   u1F389, 
@@ -16,7 +16,6 @@ import {
   starHalfOutline,
   heartFullOutline
 } from "react-icons-kit/typicons";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
@@ -89,9 +88,9 @@ class App extends Component {
                   alt="003"
                 />
               </Carousel>
-
-              {/* ALERT */}
             </div>
+
+            {/* ALERT */}
             <div style={{ marginTop: 20 }}>
               <div className="ui negative tiny message">
                 <i className="close icon"></i>
@@ -259,6 +258,7 @@ class App extends Component {
               </Carousel>
             </div>
 
+            {/* TERBARU */}
             <div style={{ marginTop: 20 }}>
               <View auto row>
                 <View column>
@@ -279,7 +279,8 @@ class App extends Component {
                 </View>
               </View>
             </div>
-            <div style={{ marginBottom: 100 }}>
+
+            <div style={{ marginTop: 15 }}>
               <View auto row>
                 <View column width="50%">
                   <Card style={{ width: "98%" }}>
@@ -313,10 +314,7 @@ class App extends Component {
                       </View>
 
                       <View auto row>
-                        <View
-                          column
-                          style={{width: "80%" }}
-                        >
+                        <View column style={{ width: "80%" }}>
                           <View auto row style={{ width: "20%" }}>
                             <View column>
                               <Icon
@@ -388,18 +386,663 @@ class App extends Component {
                   <Card style={{ width: "98%" }}>
                     <Card.Img
                       variant="top"
-                      src="https://secure-awan.lakupon.com/cdn/600/dl-8565-201901081038577447_600.jpg"
+                      src="https://secure-awan.lakupon.com/cdn/600/dl-9435-201912031154512775_600.jpg"
                     />
                     <Card.Body>
-                      <Card.Title>Cilegon Green Waterpark</Card.Title>
+                      <Card.Title>Marcopolo Adventure</Card.Title>
                       <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Liburan Murah dan Seru Bermain Air Bersama Keluarga.
                       </Card.Text>
+                      <View auto row style={{ alignItems: "center" }}>
+                        <View column>
+                          <Card.Text style={{ textDecoration: "line-through" }}>
+                            Rp. 130.000
+                          </Card.Text>
+                        </View>
+                        <View column>
+                          <Card.Text
+                            style={{
+                              fontSize: 16,
+                              fontWeight: "500",
+                              color: "red",
+                              textAlign: "right"
+                            }}
+                          >
+                            Rp.90.000
+                          </Card.Text>
+                        </View>
+                      </View>
+
+                      <View auto row>
+                        <View column style={{ width: "80%" }}>
+                          <View auto row style={{ width: "20%" }}>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starHalfOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                          </View>
+                        </View>
+                        <View column>
+                          <Icon
+                            icon={heartFullOutline}
+                            size={25}
+                            style={{
+                              marginTop: 10,
+                              color: "red"
+                            }}
+                          />
+                        </View>
+                      </View>
                     </Card.Body>
                   </Card>
                 </View>
               </View>
+            </div>
+
+            {/* REKOMENDASI */}
+            <div style={{ marginTop: 20 }}>
+              <View auto row>
+                <View column>
+                  <p style={{ marginTop: 5, fontWeight: "500", fontSize: 16 }}>
+                    Rekomendasi Kami
+                  </p>
+                </View>
+                <View column>
+                  <p
+                    style={{
+                      marginTop: 5,
+                      color: "#0040a8",
+                      textAlign: "right"
+                    }}
+                  >
+                    Lihat Semua
+                  </p>
+                </View>
+              </View>
+            </div>
+
+            <div style={{ marginTop: 15 }}>
+              <View auto row>
+                <View column width="50%">
+                  <Card style={{ width: "98%" }}>
+                    <Card.Img
+                      variant="top"
+                      src="https://secure-awan.lakupon.com/cdn/600/dl-8831-201904051024407077_600.jpg"
+                    />
+                    <Card.Body>
+                      <Card.Title>Signature Tangerang City</Card.Title>
+                      <Card.Text>
+                        Serunya Berkaraoke di Masterpiece Signature 2 Jam.
+                      </Card.Text>
+                      <View auto row style={{ alignItems: "center" }}>
+                        <View column>
+                          <Card.Text style={{ textDecoration: "line-through" }}>
+                            Rp. 259.000
+                          </Card.Text>
+                        </View>
+                        <View column>
+                          <Card.Text
+                            style={{
+                              fontSize: 16,
+                              fontWeight: "500",
+                              color: "red",
+                              textAlign: "right"
+                            }}
+                          >
+                            Rp.50.000
+                          </Card.Text>
+                        </View>
+                      </View>
+
+                      <View auto row>
+                        <View column style={{ width: "80%" }}>
+                          <View auto row style={{ width: "20%" }}>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starHalfOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                          </View>
+                        </View>
+                        <View column>
+                          <Icon
+                            icon={heartFullOutline}
+                            size={25}
+                            style={{
+                              marginTop: 10,
+                              color: "red"
+                            }}
+                          />
+                        </View>
+                      </View>
+                    </Card.Body>
+                  </Card>
+                </View>
+                <View column width="50%">
+                  <Card style={{ width: "98%" }}>
+                    <Card.Img
+                      variant="top"
+                      src="https://secure-awan.lakupon.com/cdn/600/dl-9391-201911251132199849_600.jpg"
+                    />
+                    <Card.Body>
+                      <Card.Title>Bakery Hotel Ciputra</Card.Title>
+                      <Card.Text>
+                        Dapatkan Pilihan Cake Spesial dari Bakery Hotel Ciputra.
+                      </Card.Text>
+                      <View auto row style={{ alignItems: "center" }}>
+                        <View column>
+                          <Card.Text style={{ textDecoration: "line-through" }}>
+                            Rp. 130.000
+                          </Card.Text>
+                        </View>
+                        <View column>
+                          <Card.Text
+                            style={{
+                              fontSize: 16,
+                              fontWeight: "500",
+                              color: "red",
+                              textAlign: "right"
+                            }}
+                          >
+                            Rp.90.000
+                          </Card.Text>
+                        </View>
+                      </View>
+
+                      <View auto row>
+                        <View column style={{ width: "80%" }}>
+                          <View auto row style={{ width: "20%" }}>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starHalfOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                          </View>
+                        </View>
+                        <View column>
+                          <Icon
+                            icon={heartFullOutline}
+                            size={25}
+                            style={{
+                              marginTop: 10,
+                              color: "red"
+                            }}
+                          />
+                        </View>
+                      </View>
+                    </Card.Body>
+                  </Card>
+                </View>
+              </View>
+            </div>
+
+            {/* TERPOPULER */}
+            <div style={{ marginTop: 20 }}>
+              <View auto row>
+                <View column>
+                  <p style={{ marginTop: 5, fontWeight: "500", fontSize: 16 }}>
+                    Produk Terpopuler
+                  </p>
+                </View>
+                <View column>
+                  <p
+                    style={{
+                      marginTop: 5,
+                      color: "#0040a8",
+                      textAlign: "right"
+                    }}
+                  >
+                    Lihat Semua
+                  </p>
+                </View>
+              </View>
+            </div>
+
+            <div style={{ marginTop: 15, marginBottom: 30 }}>
+              <View auto row>
+                <View column width="50%">
+                  <Card style={{ width: "98%" }}>
+                    <Card.Img
+                      variant="top"
+                      src="https://secure-awan.lakupon.com/cdn/600/dl-8800-201903191427303249_600.jpg"
+                    />
+                    <Card.Body>
+                      <Card.Title>Wonderland Adventure</Card.Title>
+                      <Card.Text>
+                        Nikmati Liburan Murah Bersama Keluarga di Taman.
+                      </Card.Text>
+                      <View auto row style={{ alignItems: "center" }}>
+                        <View column>
+                          <Card.Text style={{ textDecoration: "line-through" }}>
+                            Rp. 95.000
+                          </Card.Text>
+                        </View>
+                        <View column>
+                          <Card.Text
+                            style={{
+                              fontSize: 16,
+                              fontWeight: "500",
+                              color: "red",
+                              textAlign: "right"
+                            }}
+                          >
+                            Rp.55.000
+                          </Card.Text>
+                        </View>
+                      </View>
+
+                      <View auto row>
+                        <View column style={{ width: "80%" }}>
+                          <View auto row style={{ width: "20%" }}>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starHalfOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                          </View>
+                        </View>
+                        <View column>
+                          <Icon
+                            icon={heartFullOutline}
+                            size={25}
+                            style={{
+                              marginTop: 10,
+                              color: "red"
+                            }}
+                          />
+                        </View>
+                      </View>
+                    </Card.Body>
+                  </Card>
+                </View>
+                <View column width="50%">
+                  <Card style={{ width: "98%" }}>
+                    <Card.Img
+                      variant="top"
+                      src="https://secure-awan.lakupon.com/cdn/600/dl-9217-201909171304074319_600.jpg"
+                    />
+                    <Card.Body>
+                      <Card.Title>Tiket Masuk Taman Ancol</Card.Title>
+                      <Card.Text>
+                        Liburan di Taman Impian Jaya Ancol. Harga Promo
+                      </Card.Text>
+                      <View auto row style={{ alignItems: "center" }}>
+                        <View column>
+                          <Card.Text style={{ textDecoration: "line-through" }}>
+                            Rp. 25.000
+                          </Card.Text>
+                        </View>
+                        <View column>
+                          <Card.Text
+                            style={{
+                              fontSize: 16,
+                              fontWeight: "500",
+                              color: "red",
+                              textAlign: "right"
+                            }}
+                          >
+                            Rp.15.000
+                          </Card.Text>
+                        </View>
+                      </View>
+
+                      <View auto row>
+                        <View column style={{ width: "80%" }}>
+                          <View auto row style={{ width: "20%" }}>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starFullOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                            <View column>
+                              <Icon
+                                icon={starHalfOutline}
+                                size={20}
+                                style={{
+                                  marginTop: 10,
+                                  color: "gold"
+                                }}
+                              />
+                            </View>
+                          </View>
+                        </View>
+                        <View column>
+                          <Icon
+                            icon={heartFullOutline}
+                            size={25}
+                            style={{
+                              marginTop: 10,
+                              color: "red"
+                            }}
+                          />
+                        </View>
+                      </View>
+                    </Card.Body>
+                  </Card>
+                </View>
+              </View>
+            </div>
+
+            <Col
+              xs
+              lg="12"
+              style={{
+                backgroundColor: "#FCFCFC",
+                paddingTop: 10,
+                marginBotton: 15
+              }}
+            >
+              {/* KENAPA MEMILIH */}
+              <div>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: 16,
+                    textAlign: "center",
+                    marginBottom: 20
+                  }}
+                >
+                  Kenapa Memilih Lakupon
+                </p>
+              </div>
+              <View auto row style={{marginBottom:20}}>
+                <View
+                  column
+                  style={{
+                    alignItems: "center",
+                    width: "20%"
+                  }}
+                >
+                  <div
+                    style={{
+                      width: 80,
+                      height: 80,
+                      backgroundColor: "#dbdbdb",
+                      borderRadius: 90,
+                      borderSize: 1,
+                      borderColor: "#000",
+                      marginBottom: 5
+                    }}
+                  >
+                    <Icon
+                      icon={packageIcon}
+                      size={30}
+                      style={{
+                        color: "#616161",
+                        marginTop: "30%",
+                        marginLeft: "30%"
+                      }}
+                    />
+                  </div>
+                  <p style={{ textAlign: "center" }}>
+                    Gratis Ongkir Seluruh Indonesia
+                  </p>
+                </View>
+                <View
+                  column
+                  style={{
+                    alignItems: "center",
+                    width: "20%"
+                  }}
+                >
+                  <div
+                    style={{
+                      width: 80,
+                      height: 80,
+                      backgroundColor: "#dbdbdb",
+                      borderRadius: 90,
+                      borderSize: 1,
+                      borderColor: "#000"
+                    }}
+                  >
+                    <Icon
+                      icon={dollarSign}
+                      size={30}
+                      style={{
+                        color: "#616161",
+                        marginTop: "30%",
+                        marginLeft: "30%"
+                      }}
+                    />
+                  </div>
+                  <p style={{ textAlign: "center", paddingBottom:10 }}>
+                    Harga Termurah
+                  </p>
+                </View>
+              </View>
+            </Col>
+
+            <div style={{ marginTop: 25 }}>
+              <p style={{ fontWeight: "500", textAlign: "center" }}>
+                Lebih Mudah Menggunakan Aplikasi Lakupon. <br />
+                Download sekarang dan nikmati semua kemudahannya.
+              </p>
+            </div>
+            <div style={{ marginLeft:'17%', marginTop: 10}}>
+              <img
+                style={{ alignSelf:"center", width: "80%"}}
+                src="https://i.ibb.co/LNHCvqN/logo.png"
+                alt="001"
+              />
+            </div>
+            <div style={{marginTop:20}}>
+              <p style={{textAlign:'center'}}>2019 Hak Cipta PT. Online Pertama</p>
             </div>
           </Col>
         </Row>

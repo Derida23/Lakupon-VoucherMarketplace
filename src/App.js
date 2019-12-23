@@ -64,7 +64,7 @@ class App extends Component {
               </View>
             </View>
 
-            {/* CAROUSEL */}
+            {/* CAROUSEL COMPONENT*/}
             <div style={{ marginTop: 15 }}>
               <Carousel
                 slidesPerPage={1}

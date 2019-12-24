@@ -23,7 +23,7 @@ import "@brainhubeu/react-carousel/lib/style.css";
 class App extends Component {
   render() {
     return (
-      // CONTAINER
+      // CONTAINER ELEMENT
       <Container>
         <Row className="justify-content-md-center">
           <Col xs lg="6" style={{ backgroundColor: "#f7f7f7" }}>

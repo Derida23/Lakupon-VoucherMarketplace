@@ -44,7 +44,7 @@ class App extends Component {
                 column
                 width="8%"
                 style={{
-                  justifyContent: "center",
+                  justifyContent: "center", 
                   alignItems: "center",
                   marginTop: 5
                 }}

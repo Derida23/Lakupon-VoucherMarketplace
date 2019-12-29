@@ -61,7 +61,7 @@ class App extends Component {
                 }}
               >
                 <Icon icon={user} size={18} style={{ color: "#0040a8" }} />
-              </View>
+              </View> 
             </View>
 
             {/* CAROUSEL COMPONENT*/}

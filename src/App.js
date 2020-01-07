@@ -5,7 +5,7 @@ import View from "react-flexbox";
 import { Icon } from "react-icons-kit";
 import { user, bell, packageIcon, dollarSign } from "react-icons-kit/feather";
 import {
-  u1F372,
+  u1F372, 
   u1F389, 
   u1F485,
   u1F3A2
